@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.align {
+    display: flex;
+}
+
+.align-vertical {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.align-row {
+    justify-content: space-between;
+}
+
+.btn-choice {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    padding: 10px;
+    vertical-align: middle;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px;
+    border: solid 40px;
+    border-image: url(assets/images/Button_Border.png) 25% repeat;
+    box-sizing: border-box;
+  }
+  
+  .btn-choice::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+  }
+  
+  .btn-rock::before {
+    background-image: url(assets/images/Rock_White.png);
+    transition: filter 0.1s ease-in-out;
+    transform: transform 0.2s ease-in-out;
+  }
+  
+  .btn-paper::before {
+    background-image: url(assets/images/Paper_White.png);
+    transition: filter 0.1s ease-in-out;
+    transform: transform 0.2s ease-in-out;
+  }
+  
+  .btn-scissors::before {
+    background-image: url(assets/images/Sword_White.png);
+    transition: filter 0.1s ease-in-out;
+    transform: transform 0.2s ease-in-out;
+  }
+
+  .rock-plain {
+    background-image: url(assets/images/Rock_White.png);
+    background-position: center center;
+  }
+  
+  .paper-plain {
+    background-image: url(assets/images/Paper_White.png);
+    background-position: center center;
+  }
+  
+  .scissors-plain {
+    background-image: url(assets/images/Sword_White.png);
+    background-position: center center;
+  }
+  
+  .btn-rock:hover::before, .btn-paper:hover::before, .btn-scissors:hover::before {
+    filter: contrast(1%);
+
+  }
+
+  .btn-rock:active::before, .btn-paper:active::before, .btn-scissors:active::before {
+    transform: scale(0.9);
+  }
+
+.btn-start {
+    height: 100px;
+    width: 180px;
+    padding: 0;
+    color: white;
+    text-align: center;
+    margin: auto;
+    transform: transform 0.2s ease-in-out;
+}
+
+.btn-start:hover {
+    color: grey;
+}
+
+.btn-start:active {
+    transform: scale(0.9);
+}
+
+.resultsBox {
+  height: 32px;
+  width: 400px;
+  text-align:center;
+}
+
+.scoreBox {
+  display: flex;
+  height: 230px;
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.scoreText {
+  text-align:center;
+  font-size: 30px;
+}

@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="main.js" async></script>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
-    <button class="start">Start Game</button>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <div id="results"></div>
-    <div class="playerScore"></div>
-    <div class="computerScore"></div>
+    <div>
+        <div class="scoreText">Player</div>
+        <div class="playerScore btn-choice scoreBox"></div>
+    </div>
+    
+    <div class="align align-vertical">
+        <div id="computerPick" class="btn-choice"></div>
+        <div id="results" class="resultsBox"></div>
+        <div class="align align-row">
+            <button class="btn-choice rock-plain" id="rock"></button>
+            <button class="btn-choice paper-plain" id="paper"></button>
+            <button class="btn-choice scissors-plain" id="scissors"></button>
+        </div>
+        <button class="start btn-choice btn-start"><span>Start Game</span></button>
+    </div>
+
+    <div>
+        <div class="scoreText">Computer</div>
+        <div class="computerScore btn-choice scoreBox"></div>
+    </div>
+    
 </body>
 </html>
